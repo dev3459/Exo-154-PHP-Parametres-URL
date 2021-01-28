@@ -10,7 +10,13 @@
  */
 
 // TODO Votre code ici.
-
+if(!isset($_GET['error'])){
+    header("Location:exo1.php?iteration=10");
+}elseif(isset($_GET['error']) && $_GET['error'] === '1'){
+    echo 'erreur';
+}else{
+    echo 'erreur interne';
+}
 
 /**
  * Exo 2
